@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+VN:wght@100..400&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Oswald", serif;
+}
+
+.header {
+    background-color: #a10000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url('images/doner-kebab-shawarma-ingredients-floating-600nw-1841189665.webp');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    font-family: "Playwrite VN", serif;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.btn-primary {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #e63e00;
+}
+
+.marquee {
+    background-color: #fff0e0;
+    color: #a10000;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee span {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.showcase img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.cta {
+    text-align: center;
+    width: 40%;
+}
+
+.cta h2 {
+    font-size: 36px;
+    color: #a10000;
+}
+
+.cta p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.reservation {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.reservation form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.reservation input, .reservation button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Oswald", serif;
+}
+
+.btn-secondary {
+    background-color: #a10000;
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.btn-secondary:hover {
+    background-color: #900000;
+}
+
+.menu {
+    background-color: #fdf2f0;
+    padding: 40px;
+    font-family: 'Oswald', serif;
+}
+
+.menu-title {
+    text-align: center;
+    color: #a10000;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 0 10%;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+}
+
+.menu-item h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.menu-item p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #a10000;
+}
+
+.menu-cta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-cta button {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu-cta button:hover {
+    background-color: #e63e00;
+}
+
+.menu-note {
+    text-align: center;
+    font-size: 14px;
+    color: #a10000;
+    margin-top: 10px;
+}
+
+
+.footer {
+    background-color: #a10000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-icons {
+    margin-top: 10px;
+}
+
+.footer-icons a {
+    margin: 0 5px;
+    color: white;
+    font-size: 18px;
+}
